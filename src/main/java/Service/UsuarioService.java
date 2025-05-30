@@ -31,7 +31,7 @@ public class UsuarioService {
         }
     }
 
-    public String obtenerUsuario(String idUsuario) {
+    public String obtenerUsuario(int idUsuario) {
         String output = "";
         for (Usuarios usuario : usuariosRepository.findAll()) {
             output += "Id Usuario: " + usuario.getIdUsuario() + "\n";
@@ -47,7 +47,7 @@ public class UsuarioService {
         }
     }
 
-    public String EliminarUsuario(String idUsuario) {
+    public String EliminarUsuario(int idUsuario) {
             String output = "";
             for (Usuarios usuario : usuariosRepository.findAll()) {
                 output += "Id Usuario: " + usuario.getIdUsuario() + "\n";
@@ -63,7 +63,7 @@ public class UsuarioService {
         }
     }
 
-    public String ActualizarUsuario(Usuarios usuario) {
+    public String ActualizarUsuario(int id, Usuarios usuario) {
         String output = "";
         for (Usuarios usuarios : usuariosRepository.findAll()) {
             output += "Id Usuario: " + usuarios.getIdUsuario() + "\n";
