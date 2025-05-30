@@ -15,8 +15,8 @@ public class UsuarioController {
 
     @GetMapping
     public String getUsuario() {
-        return UsuarioService.ListarUsuarios();
-        
+        return UsuarioService.();
+
     }
 
 
