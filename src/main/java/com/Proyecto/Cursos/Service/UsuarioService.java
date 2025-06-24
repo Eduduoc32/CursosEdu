@@ -1,7 +1,7 @@
-package Service;
+package com.Proyecto.Cursos.Service;
 
-import Model.Usuarios;
-import Repository.UsuariosRepository;
+import com.Proyecto.Cursos.Model.Usuarios;
+import com.Proyecto.Cursos.Repository.UsuariosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

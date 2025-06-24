@@ -1,4 +1,4 @@
-package Model;
+package com.Proyecto.Cursos.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,16 +8,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Cursos {
+public class Carrito {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private int idCursos;
+    private int idCarrito;
     private String nombre;
     private String descripcion;
+    private int cantidad;
+
 }

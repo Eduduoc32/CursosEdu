@@ -1,4 +1,4 @@
-package Model;
+package com.Proyecto.Cursos.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,14 +12,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Usuarios {
+public class Pago {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private int idUsuario;
+    private int idPago;
     private String nombre;
-    private String apellido;
-    private String correo;
-    private String contrasenia;
-
+    private int cantidad;
 }

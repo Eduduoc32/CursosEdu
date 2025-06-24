@@ -1,6 +1,6 @@
-package Repository;
+package com.Proyecto.Cursos.Repository;
 
-import Model.Usuarios;
+import com.Proyecto.Cursos.Model.Usuarios;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
